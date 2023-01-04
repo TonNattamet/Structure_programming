@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <math.h>
 int main(){
-    int x,y,z;
-    scanf("%d %d",&x,&y);
+    float x,y;
+    float z;
+    scanf("%f %f",&x,&y);
     z = ceil(y/x);
-    printf("%d",z);
+    printf("%.f",z);
     return 0;
 }

@@ -21,7 +21,7 @@ int main()
       else if ( str[i] == 'C' ) izlaz[i] = c;
    }
 
-   printf( "%d\n%d\n%d", izlaz[0], izlaz[1], izlaz[2] );
+   printf( "%d %d %d", izlaz[0], izlaz[1], izlaz[2] );
 
    return 0;
 
