@@ -6,10 +6,10 @@ int main()
 
     float unit,number,Total_amount;
     printf("Please enter unit price :");
-    scanf("%f,&unit");
+    scanf("%f",&unit);
 
     printf("Please enter number :");
-    scanf("%f,&number");
+    scanf("%f",&number);
 
     Total_amount = ((unit*number)/2)*1.07;
     
