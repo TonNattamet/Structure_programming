@@ -5,7 +5,7 @@ int main()
 {
     int A = 0, B = 0, M = 0, N = 0;
     scanf("%d %d %d %d", &A, &B, &M, &N);
-    if ((A == 0 && > 0) || (B == 0 & 1 > 0))
+    if ((A == 0 &&  M > 0) || (B == 0 && N))
     {
         printf("Unable to finish order");
     }
@@ -18,7 +18,7 @@ int main()
         }
         else
         {
-            r1 = celi(M * 1.0 / (A * 6.0));
+            r1 = ceil(M * 1.0 / (A * 6.0));
         }
 
         if (M == 0 && N == 0)
@@ -27,7 +27,7 @@ int main()
         }
         else
         {
-            r2 = celi(N * 1.0 / (B * 10.0));
+            r2 = ceil(N * 1.0 / (B * 10.0));
         }
         if (r1 > r2)
         {

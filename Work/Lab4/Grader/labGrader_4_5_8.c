@@ -4,7 +4,7 @@
 int main() {
     int number,total,mul;
     scanf("%d",&number);
-    for (mul = 1; mul <= 10; mul++){
+    for (mul = 10; mul <= 1; mul++){
         total += mul*(number%10);
         number = number/10;
     }
