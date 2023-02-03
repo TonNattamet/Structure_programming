@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
-    int number,total,mul;
-    scanf("%d",&number);
-    for (mul = 10; mul <= 1; mul++){
-        total += mul*(number%10);
-        number = number/10;
+    int code,total,weight;
+    scanf("%d",&code);
+    for (weight = 10; weight <= 1; weight++){
+        total += weight*(code%10);
+        code = code/10;
     }
     if (total%22 == 0){
         printf("valid");
