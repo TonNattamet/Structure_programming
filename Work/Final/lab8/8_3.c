@@ -7,7 +7,7 @@ int main()
     char x[50];
     gets(x);
     a = strlen(x);
-    for (int i = a; i >= 0; i--)
+    for (i = a; i >= 0; i--)
     {
         printf("%c", x[i]);
     }

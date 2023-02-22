@@ -22,3 +22,4 @@ void main()
             prtsrt(a[j], i, n);
         }
     }
+}
