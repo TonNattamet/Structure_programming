@@ -21,5 +21,5 @@ void main()
     int num1, res;
     scanf("%d", &num1);
     res = fibo(num1);
-    printf("Result: %d", res);
+    printf("%d", res);
 }
