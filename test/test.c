@@ -138,18 +138,99 @@
 //   return 0;
 // } // while
 
+// #include <stdio.h>
+// int main(void)
+// { // Local Declarations
+//   int limit;
+//   // Read limit
+//   printf("\nPlease enter a number between 1 and 9: ");
+//   scanf("%d", &limit);
+//   for (int lineCtrl = 1; lineCtrl <= limit; lineCtrl++)
+//   {
+//     for (int numCtrl = 1;numCtrl <= lineCtrl;numCtrl++)
+//       printf("%1d", numCtrl);
+//     printf("\n");
+//   } // for lineCtrl
+//   return 0;
+// } // main
+
+// #include <stdio.h>
+// int main()
+// {
+
+//   int i, n, x[100];
+
+//   float mean = 0, sum = 0;
+
+//   printf("Enter N:");
+
+//   scanf("%d", &n);
+
+//   for (i = 0; i < n; i++)
+//   {
+
+//     printf("x[%d]=", i);
+
+//     scanf("%d", &x[i]);
+
+//     sum = sum + x[i];
+//   }
+
+//   mean = sum / n;
+
+//   printf("Mean=%.1f\n", mean);
+
+// }
+
+// #include <stdio.h>
+
+// #include <conio.h>
+// int main()
+// {
+//   int table[12][11], row, col;
+
+//   printf("*** multiplication table ***");
+
+//   for (row = 1; row <= 12; row++)
+//   {
+
+//     printf("\n");
+
+//     for (col = 2; col <= 12; col++)
+//     {
+
+//       table[row - 1][col - 2] = row * col;
+
+//       printf(" %3d ", table[row - 1][col - 2]);
+
+//     }
+//   }
+// }
+
 #include <stdio.h>
-int main(void)
-{ // Local Declarations
-  int limit;
-  // Read limit
-  printf("\nPlease enter a number between 1 and 9: ");
-  scanf("%d", &limit);
-  for (int lineCtrl = 1; lineCtrl <= limit; lineCtrl++)
-  {
-    for (int numCtrl = 1;numCtrl <= lineCtrl;numCtrl++)
-      printf("%1d", numCtrl);
-    printf("\n");
-  } // for lineCtrl
-  return 0;
-} // main
+int main()
+{
+  // int i, j, n = 3, C[3][3];
+  // int A[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+  // int B[3][3] = {{5, 6, 7}, {8, 9, 10}, {11, 12, 13}};
+  // for (i = 0; i < n; i++)
+  // {
+  //   for (j = 0; j < n; j++)
+  //   {
+  //     C[i][j] = A[i][j] + B[i][j];
+  //   }
+  // }
+  // printf("Result:\n");
+  // for (i = 0; i < n; i++)
+  // {
+  //   for (j = 0; j < n; j++)
+  //   {
+  //     printf("%d ", C[i][j]);
+  //   }
+  //   printf("\n");
+
+  int a,b;
+  a=0XF8;b=0X4A;
+  printf("%X \n",a);
+  printf("%X \n",b);
+}
