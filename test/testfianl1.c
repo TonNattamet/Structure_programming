@@ -112,7 +112,7 @@ int main() {
             }
         }
 
-        sum += numbers[i];
+        sum = sum + numbers[i];
         // sum_of_squares += numbers[i] * numbers[i];
     }
 
