@@ -3,7 +3,7 @@
 
 int main()
 {
-    int m, n, i, j, lp = 0;
+  int m, n, i, j, lp = 0;
     scanf("%d %d", &m, &n);
     int A[m][n], B[m][n], C[m][n];
     for (i = 0; i < m; i++)
