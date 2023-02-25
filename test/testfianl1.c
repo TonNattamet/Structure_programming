@@ -78,7 +78,7 @@
 //     printf("Mean: %d\n", mean);
 //     printf("sd: %d\n", sd);
 
-//     //(x-xbar)^2/n-1
+
 //     return 0;
 // }
 
