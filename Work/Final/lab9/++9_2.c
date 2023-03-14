@@ -14,18 +14,17 @@ int main()
     struct vector3D vector[n];
     for (int i = 0; i < n; i++)
     {
-        scanf("%f %f %f", &vector[i].x, &vector[i].y,
-              &vector[i].z);
+        scanf("%f %f %f", &vector[i].x, &vector[i].y,&vector[i].z);
     }
     cal(vector, n);
 }
 void cal(struct vector3D abc[], int n)
 {
     
-    float ds;
+    float k;
     for (int i = 0; i < n; i++)
     {
-        ds = sqrt(pow(abc[i].x, 2) + pow(abc[i].y, 2) + pow(abc[i].z, 2));
-            printf("%.2f\n", ds);
+        k = sqrt(pow(abc[i].x, 2) + pow(abc[i].y, 2) + pow(abc[i].z, 2));
+            printf("%.2f\n", k);
     }
 }

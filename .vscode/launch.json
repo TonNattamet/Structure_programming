@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "RecurrenceEquation",
+      "request": "launch",
+      "mainClass": "RecurrenceEquation",
+      "projectName": "Structure_programming_1d63c5da"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
