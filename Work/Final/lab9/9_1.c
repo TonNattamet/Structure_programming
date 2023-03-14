@@ -43,7 +43,7 @@ void cal(struct point abc[], int n)
         for (int j = i + 1; j < n; j++)
         {
             ds = sqrt(pow(abc[j].x - abc[i].x, 2) + pow(abc[j].y - abc[i].y, 2));
-            printf("%f\n", ds);
+            printf("%.0f\n", ds);
         }
     }
 }
