@@ -1,17 +1,28 @@
 #include <stdio.h>
-#include <ctype.h>
-#include <string.h>
+
 int main()
 {
-    int a,i, numsum = 0, *p = &numsum;
-    char x[50];
-    gets(x);
-    a = strlen(x);
-    for (i = a; i >= 0; i--)
+    char s[100];
+    scanf("%[^\n]", s);
+
+    int len0fstr = 0, i = 0, count_num = 0;
+    for (i = 0; i < 100; i++)
     {
-        printf("%c", x[i]);
+        if (s[i] == '\0')
+        {
+            break;
+        }
+        if (s[i] == '0' || s[i] == '1' || s[i] == '2' || s[i] == '3' || s[i] == '4' ||
+            s[i] == '5' || s[i] == '6' || s[i] == '7' || s[i] == '8' || s[i] == '9')
+        {
+            count_num++;
+        }
+
+        len0fstr++;
     }
-    *p = *p + isdigit(x[i]);
-    printf("\n%d", numsum);
-    return 0;
+    for (i = len0fstr - 1; i >= 0; i--)
+    {
+        printf("%c", s[i]);
+    }
+    printf("\n%d", count_num);
 }
