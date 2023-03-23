@@ -120,19 +120,19 @@
 // }
 
 
-#include <stdio.h>
-int *smaller(int *px,int *py);
+// #include <stdio.h>
+// int *smaller(int *px,int *py);
 
-int main(void){
-    int a,b,*p;
-    int c;
-    scanf("%d %d",&a,&b);
-    p = smaller(&a,&b);
-    // printf("%d %d",a,b);
+// int main(void){
+//     int a,b,*p;
+//     int c;
+//     scanf("%d %d",&a,&b);
+//     p = smaller(&a,&b);
+//     // printf("%d %d",a,b);
 
-}
-int *smaller(int *px,int *py){
+// }
+// int *smaller(int *px,int *py){
 
-    return (*px < *py ? px : py);
+//     return (*px < *py ? px : py);
 
-}
+// }
