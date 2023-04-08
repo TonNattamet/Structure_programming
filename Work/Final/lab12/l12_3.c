@@ -1,25 +1,47 @@
 #include <stdio.h>
-
-int main() {
-    int n, a, max_pos = 0, min_neg = 0, max_product = 1;
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &a);
-        if (a > 0) {
-            max_pos = max_pos == 0 ? a : max_pos * a;
-            min_neg = min_neg * a;
-        } else if (a < 0) {
-            int temp = max_pos;
-            max_pos = min_neg == 0 ? 0 : min_neg * a;
-            min_neg = temp == 0 ? a : temp * a;
-        } else {
-            max_pos = 0;
-            min_neg = 0;
-        }
-        if (max_pos > max_product) {
-            max_product = max_pos;
+int main(){
+    int n,countm=0,temp,ans=1;
+    scanf("%d",&n);
+    int a[n],i,j;
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++){
+        if(a[i]<0){
+            countm++;
         }
     }
-    printf("The maximum product is %d\n", max_product);
-    return 0;
+    for(i=0;i<n;i++){
+        for(j=i+1;j<n;j++){
+            if(a[i]>a[j]){
+                temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+    }
+    if(n==2){
+        for(i=0;i<n;i++){
+            ans*=a[i];
+        }
+    }
+    else if(countm%2==0){
+        for(i=0;i<n;i++){
+            if(a[i]!=0){
+                ans*=a[i];
+            }
+        }
+    }
+
+    else{
+        for(i=0;i<countm-1;i++){
+            ans*=a[i];
+        }
+        for(i=0;i<n;i++){
+            if(a[i]>0){
+                ans*=a[i];
+           }
+        }
+    }
+    printf("%d",ans);
 }
